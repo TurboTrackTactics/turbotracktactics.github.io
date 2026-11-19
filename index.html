@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Testphase: Seite nicht in Suchmaschinen aufnehmen. Vor dem offiziellen Start entfernen. -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Turbo Track Tactics – das taktische Rennspiel für 4 bis 8 Spieler</title>
+  <meta name="description" content="Turbo Track Tactics ist ein taktisches Brettspiel rund um Motorsport: Bewegungskarten verdeckt legen, Reifen managen, Boxenstopp planen und im richtigen Moment überholen.">
+  <meta name="theme-color" content="#141618">
+  <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/saira-extra-condensed-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/saira-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="#top" aria-label="Turbo Track Tactics – zum Seitenanfang">
+        <img src="assets/img/logo-horizontal.svg" alt="" width="300" height="44">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="hauptnavigation" data-nav-toggle>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menü öffnen</span>
+      </button>
+      <nav id="hauptnavigation" class="site-nav" aria-label="Hauptnavigation" data-nav>
+        <ul>
+          <li><a href="#spiel">Das Spiel</a></li>
+          <li><a href="#rennen">Rennablauf</a></li>
+          <li><a href="#regeln">Spielregeln</a></li>
+          <li><a href="#modi">Spielmodi</a></li>
+          <li><a href="#komponenten">Komponenten</a></li>
+          <li><a href="#ueber-uns">Über uns</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Schaltleuchten: zeigen den Scrollfortschritt in den Farben der Bewegungskarten -->
+    <div class="shift-lights" aria-hidden="true" data-shift-lights>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <main id="inhalt">
+
+    <!-- ============ START ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-titel">
+      <div class="hero__bg" data-speed="0.35" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__text" data-speed="0.12">
+          <p class="hero__status">Brettspiel-Prototyp in Entwicklung</p>
+          <h1 class="hero__title" id="hero-titel">
+            <span>Turbo</span>
+            <span>Track</span>
+            <span>Tactics</span>
+          </h1>
+          <p class="hero__lead">Das taktische Rennspiel für 4 bis 8 Spieler. Ihr legt Bewegungskarten verdeckt, pokert mit euren Reifen und schickt der Konkurrenz im richtigen Moment eine Fast-Action-Karte.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#spiel">Spielidee ansehen</a>
+            <a class="btn btn--ghost" href="#regeln">Regeln lesen</a>
+          </div>
+        </div>
+
+        <div class="hero__cards" aria-hidden="true">
+          <img class="hero-card hero-card--back" data-speed="0.05" src="assets/img/karte-rueckseite.webp" alt="" width="640" height="894">
+          <img class="hero-card hero-card--2" data-speed="0.18" src="assets/img/karte-2.webp" alt="" width="640" height="894">
+          <img class="hero-card hero-card--5" data-speed="-0.06" src="assets/img/karte-5.webp" alt="" width="640" height="894">
+          <img class="hero-card hero-card--8" data-speed="-0.22" src="assets/img/karte-8.webp" alt="" width="640" height="894">
+        </div>
+      </div>
+      <a class="hero__scroll" href="#spiel">Weiter zum Spiel</a>
+    </section>
+
+    <!-- ============ DAS SPIEL ============ -->
+    <section class="section" id="spiel" aria-labelledby="spiel-titel">
+      <div class="container split">
+        <div class="split__main">
+          <h2 class="section-title" id="spiel-titel">Nicht der Würfel gibt das Tempo vor, sondern eure Hand</h2>
+          <p class="lead">Bei Turbo Track Tactics fahrt ihr Formelrennen auf dem Spielbrett. Wie weit euer Auto kommt, entscheiden die Bewegungskarten, die ihr jede Runde verdeckt auslegt.</p>
+          <p>Vor dem Start klärt das Qualifying die Startaufstellung. Im Rennen geht es über vier Runden mit Pflicht-Boxenstopp. Wer seine Reifen zu früh verheizt, verliert Tempo. Wer zu lange draußen bleibt, verliert die Strategie. Dazwischen sorgen Fast-Action-Karten für Chaos: Ihr könnt sie euch selbst geben oder sie euren Mitspielern unterjubeln.</p>
+          <p>Überholt wird im Würfelduell, Ereignisfelder auf der Strecke bringen Nachschub an Karten, und einmal im Spiel greift euer Teamchef ein.</p>
+        </div>
+
+        <dl class="spec-sheet" aria-label="Eckdaten">
+          <div class="spec-sheet__row">
+            <dt>Spieler</dt>
+            <dd>4 bis 8</dd>
+          </div>
+          <div class="spec-sheet__row">
+            <dt>Spieldauer</dt>
+            <dd>rund 2 Stunden</dd>
+          </div>
+          <div class="spec-sheet__row">
+            <dt>Alter</dt>
+            <dd>ab 12 Jahren</dd>
+          </div>
+          <div class="spec-sheet__row">
+            <dt>Rennlänge</dt>
+            <dd>4 Runden mit Pflicht-Boxenstopp</dd>
+          </div>
+          <div class="spec-sheet__row">
+            <dt>Spielmodi</dt>
+            <dd>Solo, Rennstall, Team und Meisterschaft</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ RENNABLAUF ============ -->
+    <section class="section section--asphalt" id="rennen" aria-labelledby="rennen-titel">
+      <div class="container">
+        <h2 class="section-title" id="rennen-titel">So läuft ein Rennen</h2>
+        <p class="lead narrow">Von der Startaufstellung bis zur Zielflagge in fünf Etappen. Die Farben folgen den Bewegungskarten: rot ist langsam, grün ist Vollgas.</p>
+
+        <ol class="race-steps">
+          <li class="race-step" style="--step-color: var(--red)">
+            <h3>Vorbereitung</h3>
+            <p>Ihr wählt eine der vier Strecken. Jeder erhält Spielerkarte, Auto und Marker in seiner Farbe und zieht fünf Bewegungskarten, eine Fast-Action-Karte und eine Teamchef-Karte.</p>
+          </li>
+          <li class="race-step" style="--step-color: var(--red)">
+            <h3>Qualifying</h3>
+            <p>Jeder wählt Soft- oder Hard-Reifen und legt eine Bewegungskarte verdeckt ab. Alle decken gleichzeitig auf: Die höchste Summe aus Karte und Reifenbonus startet von Platz 1.</p>
+          </li>
+          <li class="race-step" style="--step-color: var(--yellow)">
+            <h3>Rennen</h3>
+            <p>Vier Runden lang spielt ihr Zug um Zug: erst Karten verdeckt legen, dann aufdecken und fahren. Mit jeder Runde bauen eure Reifen ab.</p>
+          </li>
+          <li class="race-step" style="--step-color: var(--yellow)">
+            <h3>Boxenstopp</h3>
+            <p>Einmal muss jeder an die Box. Dort wechselt ihr auf die andere Reifenmischung, setzt den Reifenzustand zurück und schaltet euren Boxenstopp-Marker auf Grün.</p>
+          </li>
+          <li class="race-step" style="--step-color: var(--green)">
+            <h3>Zieleinfahrt</h3>
+            <p>Wer im selben Zug über die Linie fährt, kämpft um die Platzierung: Bonuspunkte für den Zieleinfahrtsplatz plus eure gelegten Bewegungskarten entscheiden.</p>
+          </li>
+        </ol>
+
+        <!-- Ein Zug im Detail -->
+        <div class="turn" aria-labelledby="zug-titel">
+          <div class="turn__phases">
+            <h3 id="zug-titel">Ein Zug im Detail</h3>
+            <div class="turn__phase">
+              <h4>Planen <span>vom Letzten zum Ersten</span></h4>
+              <p>Der Letztplatzierte beginnt. Er verteilt Fast-Action-Karten verdeckt auf seine eigene oder fremde Spielerkarten und legt dann seine Bewegungskarten verdeckt aus: auf zweispurigen Abschnitten bis zu zwei, auf einspurigen eine.</p>
+            </div>
+            <div class="turn__phase">
+              <h4>Fahren <span>vom Ersten zum Letzten</span></h4>
+              <p>Jetzt beginnt der Führende. Er deckt seine Fast-Action-Karten auf, dann die Bewegungskarten, verrechnet den Reifenzustand und zieht sein Auto. Am Ende zieht er zwei neue Bewegungskarten und für jedes überfahrene Ereignisfeld eine Fast-Action-Karte.</p>
+            </div>
+          </div>
+
+          <figure class="turn__example">
+            <div class="calc" role="img" aria-label="Rechenbeispiel: Fast-Action-Karte plus 5, Bewegungskarten 6 und 7, Reifenzustand minus 1, ergibt 17 Felder.">
+              <div class="calc__item calc__item--fa">
+                <img src="assets/img/fast-action.webp" alt="" width="560" height="808" loading="lazy">
+                <span class="calc__badge">+5</span>
+              </div>
+              <span class="calc__op">+</span>
+              <div class="calc__item"><img src="assets/img/karte-6-s.webp" alt="" width="320" height="447" loading="lazy"></div>
+              <span class="calc__op">+</span>
+              <div class="calc__item"><img src="assets/img/karte-7-s.webp" alt="" width="320" height="447" loading="lazy"></div>
+              <span class="calc__op">−</span>
+              <div class="calc__item calc__item--tyre"><span>1</span><small>Reifen</small></div>
+              <span class="calc__op">=</span>
+              <div class="calc__result"><strong>17</strong><small>Felder</small></div>
+            </div>
+            <figcaption>Beispiel: Fast-Action-Karte „Geschwindigkeit +5“, Bewegungskarten 6 und 7, abgefahrene Reifen mit −1. Ein Feld nach vorn ist immer drin, auch wenn die Rechnung ins Minus geht.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPIELREGELN ============ -->
+    <section class="section" id="regeln" aria-labelledby="regeln-titel">
+      <div class="container">
+        <h2 class="section-title" id="regeln-titel">Die wichtigsten Regeln</h2>
+        <p class="lead narrow">Die komplette Anleitung bekommt ihr mit dem Spiel. Hier sind die Mechaniken, die jedes Rennen entscheiden.</p>
+
+        <article class="rule">
+          <div class="rule__text">
+            <h3>Überholen im Würfelduell</h3>
+            <p>Wer überholen will, fährt direkt hinter seinen Gegner. Beide würfeln mit je drei Würfeln: Für den Angreifer zählt jede 3, 4, 5 oder 6, für den Verteidiger jede 1 oder 2. Hat der Angreifer mehr Treffer, fährt er vorbei und setzt seine Bewegung fort. Sonst bleibt er hängen und die restlichen Bewegungspunkte verfallen.</p>
+            <p>Stehen mehrere Autos dicht hintereinander, würfelt jeder Verteidiger mit. Sicherer ist das Umfahren auf zweispurigen Abschnitten. Das kostet allerdings Bewegungspunkte. Überrundete Autos dürft ihr einfach ignorieren.</p>
+          </div>
+          <figure class="rule__visual duel" aria-label="Beispiel Überholduell: Angreifer würfelt 6, 5 und 4, also drei Treffer. Verteidiger würfelt 1, 2 und 4, also zwei Treffer. Das Überholmanöver gelingt.">
+            <div class="duel__side">
+              <span class="duel__who">Angreifer</span>
+              <div class="dice">
+                <span class="die die--hit" data-pips="6"></span>
+                <span class="die die--hit" data-pips="5"></span>
+                <span class="die die--hit" data-pips="4"></span>
+              </div>
+              <span class="duel__score">3 Treffer</span>
+            </div>
+            <div class="duel__side">
+              <span class="duel__who">Verteidiger</span>
+              <div class="dice">
+                <span class="die die--hit" data-pips="1"></span>
+                <span class="die die--hit" data-pips="2"></span>
+                <span class="die" data-pips="4"></span>
+              </div>
+              <span class="duel__score">2 Treffer</span>
+            </div>
+            <figcaption>3 gegen 2: Das Manöver gelingt.</figcaption>
+          </figure>
+        </article>
+
+        <article class="rule rule--flip">
+          <div class="rule__text">
+            <h3>Reifen: Soft oder Hard</h3>
+            <p>Frische Soft-Reifen bringen +2 Bewegung, bauen aber bis auf −4 ab. Hard-Reifen starten mit +1 und fallen nur bis −2. Mit jeder Überfahrt der Start-Ziel-Linie rutscht euer Reifenmarker eine Stufe nach unten, und dieser Wert gilt in jedem Zug.</p>
+            <p>Beim Boxenstopp setzt ihr den Reifenzustand zurück und müsst auf die andere Mischung wechseln. Wer früh stoppt, fährt mit frischen Reifen auf und davon. Wer spät stoppt, hat am Ende das schnellere Auto.</p>
+          </div>
+          <figure class="rule__visual">
+            <img src="assets/img/reifen.webp" alt="Reifenanzeige der Spielerkarte: Soft mit den Stufen +2, 0, 0, −2 und −4, Hard mit den Stufen +1, 0, 0, −1 und −2." width="520" height="576" loading="lazy">
+          </figure>
+        </article>
+
+        <article class="rule">
+          <div class="rule__text">
+            <h3>Fast-Action-Karten</h3>
+            <p>Rund 100 Ereigniskarten sorgen für Überraschungen. Jede Spielerkarte hat drei Plätze für Fast-Action-Karten, und die dürft ihr verdeckt bei euch selbst oder bei euren Mitspielern ablegen. Manche Karten sind jederzeit spielbar, Karten mit Stern werden zuerst ausgewertet, und einige wirken über mehrere Züge.</p>
+            <p>Da heißt es mal „Ich gönn mir richtig einen!“ und ihr zieht zwei Karten nach. Oder es geht auf „Reise nach Jerusalem“ und alle geben zwei Handkarten nach rechts weiter. Nachschub gibt es auf den Ereignisfeldern der Strecke.</p>
+          </div>
+          <figure class="rule__visual rule__visual--card">
+            <img src="assets/img/fast-action.webp" alt="Rückseite einer Fast-Action-Karte: eine Schatzkiste mit Fragezeichen, Zielflagge, Helm und Reifen." width="560" height="808" loading="lazy">
+          </figure>
+        </article>
+
+        <div class="rule-grid">
+          <div class="rule-mini">
+            <h3>Gelbe Flagge und Safety Car</h3>
+            <p>Mit Gelbe-Flagge-Karten markiert ihr gefährliche Felder: Wer darüberfährt, kassiert Schaden und Reifenverschleiß. Wird die dritte Gelbe Flagge gespielt, kommt das Safety Car, und das Feld schließt zum Führenden auf. Das passiert höchstens einmal pro Rennen.</p>
+          </div>
+          <div class="rule-mini rule-mini--with-image">
+            <img src="assets/img/teamchef.webp" alt="" width="420" height="637" loading="lazy">
+            <div>
+              <h3>Der Teamchef</h3>
+              <p>Jeder startet mit einer Teamchef-Karte, die einmal im Rennen eingesetzt werden kann: etwa ein Überholduell ohne Würfeln gewinnen oder einen Zug mit +5 Geschwindigkeit fahren. Teamchef-Effekte haben Vorrang und lassen sich nicht aufheben.</p>
+            </div>
+          </div>
+          <div class="rule-mini">
+            <h3>Schaden</h3>
+            <p>Ein missglücktes Überholmanöver geht aufs Material: Euer Schaden steigt um einen Punkt, und ab bestimmten Werten wirkt sich das auf euer Auto aus.</p>
+          </div>
+          <div class="rule-mini">
+            <h3>Handkarten</h3>
+            <p>Ihr haltet höchstens fünf Bewegungskarten und fünf Fast-Action-Karten auf der Hand. Was darüber hinausgeht, wird abgeworfen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPIELMODI ============ -->
+    <section class="section section--asphalt" id="modi" aria-labelledby="modi-titel">
+      <div class="container">
+        <h2 class="section-title" id="modi-titel">Spielmodi</h2>
+        <div class="modes">
+          <div class="modes__intro">
+            <dl class="mode-list">
+              <div>
+                <dt>Solo</dt>
+                <dd>Jeder steuert ein Auto und fährt auf eigene Rechnung.</dd>
+              </div>
+              <div>
+                <dt>Rennstall</dt>
+                <dd>Jeder steuert zwei Autos. Die Punkte beider Fahrer zählen zusätzlich für die Rennstallwertung.</dd>
+              </div>
+              <div>
+                <dt>Team</dt>
+                <dd>Je zwei Spieler bilden ein Team. Jeder fährt ein Auto, die Punkte werden für die Teamwertung addiert.</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="table-wrap">
+            <table class="mode-table">
+              <caption>Welcher Modus passt zu eurer Runde?</caption>
+              <thead>
+                <tr><th scope="col">Spieler</th><th scope="col">Solo</th><th scope="col">Rennstall</th><th scope="col">Team</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">4</th><td><span class="ok">möglich</span></td><td><span class="best">empfohlen</span></td><td><span class="ok">möglich</span></td></tr>
+                <tr><th scope="row">5</th><td><span class="ok">möglich</span></td><td><span class="no">–</span></td><td><span class="no">–</span></td></tr>
+                <tr><th scope="row">6</th><td><span class="best">empfohlen</span></td><td><span class="no">–</span></td><td><span class="ok">möglich</span></td></tr>
+                <tr><th scope="row">7</th><td><span class="ok">möglich</span></td><td><span class="no">–</span></td><td><span class="no">–</span></td></tr>
+                <tr><th scope="row">8</th><td><span class="ok">möglich</span></td><td><span class="no">–</span></td><td><span class="best">empfohlen</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="championship">
+          <div class="championship__text">
+            <h3>Meisterschaft</h3>
+            <p>Ein Rennen ist euch nicht genug? Im Meisterschaftsmodus fahrt ihr eine ganze Saison über mehrere Spieleabende. Auf eurer Scorecard sammelt ihr Punkte aus Qualifying und Rennen und schaltet Upgrades für euer Auto frei: Reifen, Frontspoiler, Heckspoiler, Motor, Unterboden und Boxencrew.</p>
+          </div>
+          <div class="points">
+            <table class="points-table">
+              <caption>Punkte im Rennen</caption>
+              <tbody>
+                <tr><th scope="row">P1</th><td>20</td></tr>
+                <tr><th scope="row">P2</th><td>15</td></tr>
+                <tr><th scope="row">P3</th><td>12</td></tr>
+                <tr><th scope="row">P4</th><td>10</td></tr>
+                <tr><th scope="row">P5</th><td>8</td></tr>
+                <tr><th scope="row">P6</th><td>6</td></tr>
+                <tr><th scope="row">P7</th><td>4</td></tr>
+                <tr><th scope="row">P8</th><td>2</td></tr>
+              </tbody>
+            </table>
+            <table class="points-table">
+              <caption>Punkte im Qualifying</caption>
+              <tbody>
+                <tr><th scope="row">P1</th><td>3</td></tr>
+                <tr><th scope="row">P2</th><td>2</td></tr>
+                <tr><th scope="row">P3</th><td>1</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KOMPONENTEN ============ -->
+    <section class="section" id="komponenten" aria-labelledby="komponenten-titel">
+      <div class="container">
+        <h2 class="section-title" id="komponenten-titel">Was in der Schachtel steckt</h2>
+
+        <div class="component component--cards">
+          <div class="component__head">
+            <h3>Bewegungskarten</h3>
+            <p>92 Karten mit Werten von 2 bis 8. Die mittleren Werte kommen am häufigsten vor, die schnellen und die langsamen Karten sind selten. Rot steht für wenig Tempo, Gelb für Mittelfeld und Grün für Vollgas.</p>
+          </div>
+
+          <ul class="card-fan" aria-label="Alle Bewegungskarten">
+            <li><img src="assets/img/karte-2-s.webp" alt="Bewegungskarte 2" width="320" height="447" loading="lazy"></li>
+            <li><img src="assets/img/karte-3-s.webp" alt="Bewegungskarte 3" width="320" height="447" loading="lazy"></li>
+            <li><img src="assets/img/karte-4-s.webp" alt="Bewegungskarte 4" width="320" height="447" loading="lazy"></li>
+            <li><img src="assets/img/karte-5-s.webp" alt="Bewegungskarte 5" width="320" height="447" loading="lazy"></li>
+            <li><img src="assets/img/karte-6-s.webp" alt="Bewegungskarte 6" width="320" height="447" loading="lazy"></li>
+            <li><img src="assets/img/karte-7-s.webp" alt="Bewegungskarte 7" width="320" height="447" loading="lazy"></li>
+            <li><img src="assets/img/karte-8-s.webp" alt="Bewegungskarte 8" width="320" height="447" loading="lazy"></li>
+            <li><img src="assets/img/karte-rueckseite-s.webp" alt="Rückseite der Bewegungskarten" width="320" height="447" loading="lazy"></li>
+          </ul>
+
+          <figure class="deck-chart">
+            <figcaption>So oft liegt jeder Wert im Stapel</figcaption>
+            <ol class="deck-chart__bars">
+              <li style="--n: 8;  --c: var(--red)"><span class="deck-chart__value">2</span><span class="deck-chart__bar"></span><span class="deck-chart__count">8×</span></li>
+              <li style="--n: 12; --c: var(--red)"><span class="deck-chart__value">3</span><span class="deck-chart__bar"></span><span class="deck-chart__count">12×</span></li>
+              <li style="--n: 16; --c: var(--yellow)"><span class="deck-chart__value">4</span><span class="deck-chart__bar"></span><span class="deck-chart__count">16×</span></li>
+              <li style="--n: 20; --c: var(--yellow)"><span class="deck-chart__value">5</span><span class="deck-chart__bar"></span><span class="deck-chart__count">20×</span></li>
+              <li style="--n: 16; --c: var(--yellow)"><span class="deck-chart__value">6</span><span class="deck-chart__bar"></span><span class="deck-chart__count">16×</span></li>
+              <li style="--n: 12; --c: var(--green)"><span class="deck-chart__value">7</span><span class="deck-chart__bar"></span><span class="deck-chart__count">12×</span></li>
+              <li style="--n: 8;  --c: var(--green)"><span class="deck-chart__value">8</span><span class="deck-chart__bar"></span><span class="deck-chart__count">8×</span></li>
+            </ol>
+          </figure>
+        </div>
+
+        <div class="component component--board">
+          <figure class="board-figure">
+            <img src="assets/img/spielerkarte.webp" srcset="assets/img/spielerkarte-s.webp 900w, assets/img/spielerkarte.webp 1800w" sizes="(min-width: 960px) 60vw, 100vw" alt="Die Spielerkarte: oben drei Plätze für Bewegungskarten, darunter drei Plätze für Fast-Action-Karten. Rechts Rundenzähler, Boxenstopp-Ampel, Platz für den Teamchef und die Reifenanzeige." width="1800" height="1273" loading="lazy">
+          </figure>
+          <div class="component__head">
+            <h3>Die Spielerkarte</h3>
+            <p>Euer Cockpit. Oben legt ihr Bewegungskarten ab, darunter landen die Fast-Action-Karten, die ihr euch selbst gebt oder von anderen kassiert.</p>
+            <p>Rechts behaltet ihr alles im Blick, was über Sieg und Niederlage entscheidet: die aktuelle Runde, die Boxenstopp-Ampel, euren Teamchef und den Zustand eurer Reifen.</p>
+          </div>
+        </div>
+
+        <div class="component component--track">
+          <div class="component__head">
+            <h3>Die Strecken</h3>
+            <p>Vier Strecken mit zweispurigen Geraden, engen einspurigen Passagen und Kurven, in denen die Außenbahn länger ist als die Ideallinie. Dazu kommen eine Boxengasse mit Einfahrt, Stopp und Ausfahrt sowie Ereignisfelder, auf denen ihr Fast-Action-Karten zieht.</p>
+          </div>
+
+          <figure class="track-figure">
+            <svg class="track" viewBox="0 0 1000 640" role="img" aria-labelledby="strecke-titel strecke-beschreibung" data-track>
+              <title id="strecke-titel">Beispielstrecke</title>
+              <desc id="strecke-beschreibung">Stilisierte Rennstrecke mit Start-Ziel-Gerade unten, Boxengasse parallel dazu, mehreren Kurven und vier gelb markierten Ereignisfeldern.</desc>
+              <defs>
+                <pattern id="checker" width="12" height="12" patternUnits="userSpaceOnUse">
+                  <rect width="12" height="12" fill="#f1f2ee"/>
+                  <rect width="6" height="6" fill="#141618"/>
+                  <rect x="6" y="6" width="6" height="6" fill="#141618"/>
+                </pattern>
+                <path id="streckenpfad" d="M200 520 L640 520 C720 520 760 480 760 420 L760 380 C760 320 820 300 860 300 C920 300 950 250 905 205 C865 165 790 190 745 160 C700 130 720 70 650 60 L420 60 C340 60 330 130 400 160 C470 190 480 250 410 270 C350 290 300 250 240 260 C150 275 110 330 110 400 L110 440 C110 500 150 520 200 520 Z"/>
+              </defs>
+              <!-- Boxengasse -->
+              <path class="track__pit" d="M180 520 C200 572 220 576 260 576 L600 576 C640 576 660 560 680 520"/>
+              <g class="track__pit-boxes">
+                <rect x="330" y="560" width="48" height="32" rx="3"/>
+                <rect x="400" y="560" width="48" height="32" rx="3"/>
+                <rect x="470" y="560" width="48" height="32" rx="3"/>
+              </g>
+              <text class="track__label" x="430" y="625" text-anchor="middle">Boxengasse</text>
+              <!-- Strecke: Rand, Asphalt, Felder, Mittellinie -->
+              <use href="#streckenpfad" class="track__edge"/>
+              <use href="#streckenpfad" class="track__asphalt"/>
+              <use href="#streckenpfad" class="track__fields"/>
+              <use href="#streckenpfad" class="track__centre"/>
+              <!-- Ereignisfelder -->
+              <g class="track__events">
+                <rect x="508" y="38" width="26" height="44" rx="3"/>
+                <rect x="738" y="392" width="44" height="26" rx="3"/>
+                <rect x="88" y="406" width="44" height="26" rx="3"/>
+                <rect x="300" y="498" width="26" height="44" rx="3"/>
+              </g>
+              <!-- Start/Ziel -->
+              <rect x="472" y="497" width="12" height="46" fill="url(#checker)"/>
+              <text class="track__label" x="478" y="478" text-anchor="middle">Start / Ziel</text>
+              <!-- Fahrzeug für die Animation -->
+              <g class="track__car" data-track-car>
+                <circle r="11"/>
+              </g>
+            </svg>
+            <figcaption class="track-legend">
+              <span><i class="swatch swatch--event"></i>Ereignisfeld</span>
+              <span><i class="swatch swatch--pit"></i>Boxengasse</span>
+              <span><i class="swatch swatch--line"></i>Spurtrennung auf zweispurigen Abschnitten</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="box-contents">
+          <h3>Inhalt</h3>
+          <ul>
+            <li><strong>4</strong> Strecken</li>
+            <li><strong>8</strong> Autos in unterschiedlichen Farben</li>
+            <li><strong>8</strong> Spielerkarten</li>
+            <li><strong>8</strong> Scorecards für eure Ergebnisse</li>
+            <li><strong>92</strong> Bewegungskarten</li>
+            <li><strong>ca. 100</strong> Fast-Action-Karten</li>
+            <li><strong>10</strong> Teamchef-Karten</li>
+            <li><strong>5</strong> Würfel für Überholduelle</li>
+            <li><strong>32</strong> Marker für Runden, Boxenstopp, Reifen und Schaden</li>
+            <li><strong>1</strong> Marker für den Führenden</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ÜBER UNS ============ -->
+    <section class="section section--asphalt" id="ueber-uns" aria-labelledby="ueber-titel">
+      <div class="container narrow">
+        <h2 class="section-title" id="ueber-titel">Über uns</h2>
+        <p class="lead">Turbo Track Tactics ist ein Projekt von drei Freunden aus dem Emsland, die Motorsport und lange Spieleabende lieben.</p>
+        <p>Angefangen hat alles mit Skizzen auf Papier und der Frage, wie sich Boxenfunk, Reifenpoker und Überholmanöver auf ein Spielbrett bringen lassen. Seitdem haben wir Karten entworfen, Strecken gezeichnet und unzählige Testrennen gefahren. Mehr über uns und die Entstehung des Spiels erfahrt ihr hier bald.</p>
+      </div>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section class="section contact" id="kontakt" aria-labelledby="kontakt-titel">
+      <div class="container narrow">
+        <h2 class="section-title" id="kontakt-titel">Kontakt</h2>
+        <p class="lead">Fragen zum Spiel, Ideen oder Lust auf eine Testrunde? Schreibt uns eine E-Mail.</p>
+        <p class="contact__mail">
+          <a class="btn btn--primary" data-mail data-user="turbotracktactics" data-domain="gmx.de" href="#kontakt">E-Mail schreiben</a>
+          <span class="contact__address" data-mail-text>turbotracktactics [at] gmx.de</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <img src="assets/img/logo-horizontal.svg" alt="Turbo Track Tactics" width="300" height="44" loading="lazy">
+      <p class="site-footer__note">Ein Brettspiel in Entwicklung. Regeln und Inhalte können sich bis zur Veröffentlichung noch ändern.</p>
+      <nav aria-label="Rechtliches">
+        <ul class="site-footer__links">
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__copy">© 2026 Turbo Track Tactics</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
